@@ -27,7 +27,6 @@ exports.config = {
   onPrepare() {
     const { spawn } = require('child_process')
     const serverPath = require('path').join(__dirname, './json/server.js');
-    console.log(serverPath)
     spawn('node', [serverPath]);
 
     require('ts-node').register({
